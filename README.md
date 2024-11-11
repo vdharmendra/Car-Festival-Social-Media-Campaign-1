@@ -26,10 +26,10 @@
 </ul>
 <br>
 <span>Desktop Desgin</span><br/>
-<a href="https://www.behance.net/gallery/212133257/Grind-Coffee-Grind-Coffee-Landing-Page" target="_blank" >
+<a href="https://www.behance.net/gallery/212222575/Car-Festival-social-media-campaign-1" target="_blank" >
 <img src="./img/car-festival-2024-landing-page.gif" width="575px"/>
 </a>
-<a href="https://www.behance.net/gallery/212133257/Grind-Coffee-Grind-Coffee-Landing-Page" target="_blank" >
+<a href="https://www.behance.net/gallery/212222575/Car-Festival-social-media-campaign-1" target="_blank" >
 <img src="./img/cover.png" width="575px"/>
 </a>
 
