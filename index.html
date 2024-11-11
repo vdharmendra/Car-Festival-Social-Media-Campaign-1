@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Fest 2024 | Car Festival social media campaign landing page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CUSTOME CSS LINK -->
+     <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+
+    <main>
+        <div class="logo">Car Fest</div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- HERO BANNER SECTION -->
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide first">
+                    <div class="yellow"></div>
+                    <div class="black"></div>
+                    <div class="content">
+                        <div class="title">
+                            <div class="small">Let's</div>
+                            <div class="big"><span>R</span><span>I</span><span>D</span><span>E</span></div>
+                        </div>
+                        <div class="image">
+                            <img src="./img/c1.png" alt="car">
+                        </div>
+
+                        <div class="specs">
+                            <span><b>Accelera</b>tion</span>
+                            <span><b>Preci</b>sion</span>
+                            <span><b>Aerodyna</b>mics</span>
+                            <button>Discover Now <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+
+                <div class="swiper-slide">
+                    <div class="red"></div>
+                    <div class="black"></div>
+                    <div class="content">
+                        <div class="title">
+                            <div class="small">Let's</div>
+                            <div class="big">Auto</div>
+                        </div>
+                        <div class="image">
+                            <img src="./img/c2.png" alt="car">
+                        </div>
+
+                        <div class="specs">
+                            <span><b>Accelera</b>tion</span>
+                            <span><b>Preci</b>sion</span>
+                            <span><b>Aerodyna</b>mics</span>
+                            <button class="red-c">Discover Now <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 3 -->
+
+                <div class="swiper-slide">
+                    <div class="blue"></div>
+                    <div class="black"></div>
+                    <div class="content">
+                        <div class="title">
+                            <div class="small">Let's</div>
+                            <div class="big">Motor</div>
+                        </div>
+                        <div class="image">
+                            <img src="./img/c3.png" alt="car">
+                        </div>
+
+                        <div class="specs">
+                            <span><b>Accelera</b>tion</span>
+                            <span><b>Preci</b>sion</span>
+                            <span><b>Aerodyna</b>mics</span>
+                            <button class="blue-c">Discover Now <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+
+    <!-- SWIPER JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+     <!-- CUSTOME JS -->
+
+     <script>
+        var swiper = new Swiper(".swiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            effect: "coverflow",
+            speed: 2000,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"> <span>' + String(index + 1).padStart(2, '0') + '</span></span>';
+                },
+            },
+        });
+
+        gsap.from(".first .yellow", {
+            y: -1000,
+            duration: 2
+        })
+        gsap.from(".first .black", {
+            y: 1000,
+            duration: 2
+        })
+        gsap.from(".first img", {
+            x: 1000,
+            duration: 2
+        })
+        gsap.from(".first .small", {
+            y: 100,
+            opacity: 0,
+            delay: 2.1
+        })
+        gsap.from(".first .big span", {
+            y: 100,
+            opacity: 0,
+            stagger: 0.2,
+            delay: 2.1
+        });
+     </script>
+</body>
+</html>
